@@ -1,0 +1,134 @@
+:root {
+  --brand-light: #f67841;
+  --brand-mid: #f3541c;
+  --brand-dark: #e43a12;
+  --text-primary: #292524;
+  --text-secondary: #57534e;
+  --text-tertiary: #8f8881;
+  --text-highlight: #e43a12;
+  --surface-primary: #ffffff;
+  --surface-primary-v2: #fafafa;
+  --surface-secondary: #fee7d6;
+  --surface-disabled: #e7e5e4;
+  --stroke-default: #d6d3d1;
+  --stroke-highlight: #f3541c;
+  --semantic-error: #dc2626;
+  --orange: #f9a474;
+  --yellow: #fedf6f;
+  --green: #c7d78d;
+  --blue: #b8cedc;
+  --violet: #c3b2e7;
+  --pink: #f682a5;
+
+  --font-family: "Alice", serif;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  position: relative;
+  background-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+h4 {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+span {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.actions-wrapper {
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.actions-wrapper button {
+  cursor: pointer;
+  transition: 0.2s linear;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  color: var(--text-highlight);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.actions-wrapper button[type="button"] {
+  border: 1px solid var(--brand-dark);
+  color: var(--brand-dark);
+  background-color: var(--surface-primary);
+}
+
+.actions-wrapper button[type="button"]:hover,
+.actions-wrapper button[type="button"]:focus {
+  outline: 0.25rem solid var(--surface-secondary);
+  color: var(--text-highlight);
+}
+
+.actions-wrapper button[type="submit"] {
+  color: var(--surface-primary);
+  background-color: var(--brand-dark);
+}
+
+.actions-wrapper button[type="submit"]:hover,
+.actions-wrapper button[type="submit"]:focus {
+  background-color: var(--brand-mid);
+}

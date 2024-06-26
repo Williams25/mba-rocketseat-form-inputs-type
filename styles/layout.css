@@ -1,0 +1,87 @@
+.app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  padding: 4rem;
+  background-color: var(--surface-primary-v2);
+}
+
+main .main-container {
+  max-width: 33rem;
+  margin-left: auto;
+}
+
+main .main-container .back {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s linear;
+  margin-bottom: 1.5rem;
+}
+
+main .main-container .back span {
+  display: block;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+main .main-container .back:hover {
+  filter: brightness(0.8);
+}
+
+main .main-container h1 {
+  margin-bottom: 8px;
+  display: block;
+  color: var(--text-primary);
+}
+
+main .main-container p {
+  display: block;
+  color: var(--text-secondary);
+}
+
+aside {
+  background-color: var(--surface-secondary);
+  padding: 4rem;
+  position: relative;
+}
+
+aside .aside-container {
+  max-width: 31rem;
+  position: sticky;
+  top: 70px;
+  transition: 0.2s linear;
+}
+
+aside header {
+  margin-bottom: 2rem;
+}
+
+aside header h2 {
+  margin: 8px 0;
+  color: var(--text-primary);
+}
+
+aside header h2 span {
+  color: var(--text-highlight);
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+aside header p {
+  display: block;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+aside header img {
+  max-width: 450px;
+  width: 100%;
+  object-fit: contain;
+}
